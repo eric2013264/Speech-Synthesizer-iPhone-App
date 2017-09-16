@@ -1,0 +1,26 @@
+CptS 483 Final Project
+by Eric Chen 11381898
+
+Assistive Speech Synthesizer (for ALS patients or the mute)
+
+PROPOSAL:
+
+My proposal for my final project is an assistive app that does text to speech for people with physically dibilitating conditions resulting in limited physical abilities or difficulty speaking. Conditions such as ALS (Amyotrophic Lateral Sclerosis) also known as Lou Gehrig's disease, which a weakens muscles and impacts physical functions.
+
+People will be able to type in text and then select from various options such as rate of speech, pitch of speech, and language of speech. These will be implemented using some sort of value toggle we went over in past assignments. I may implement some global settings just to up the difficulty and add more customization to my app.
+
+It will be feature packed and have least the difficulty of 3 homework assignments combined. Features such as an emergency button: people suffering from ALS have limited mobility so like certain child safety applications or other protective applications, an emergency button can be implemented that, at a single press, will send ones' current location to their emergency contacts and or the police or simply call them.
+
+More features I am considering include storing commonly used phrases and sentences for easy access which can be entered by the user. A personal information as well as emergency contacts page for easily displaying crucial information in emergency situations, which implies this will be an app with segues and multiple views and a lot of saving variable values.
+
+
+HOW TO USE
+
+- Navigation: Navigation buttons are found at the tops of pages. Additionally, users can swipe left to go back a page from anywhere in the app.
+
+- The application launches into the main screen, where the user can quickly input text to be spoken. A subtle overlay of instructions will be presented to the user upon first boot. The settings can be accessed quickly via the main view and are saved in persistent memory. On the bottom features 3 buttons, an "add phrase" button, a speech button, and a "one-touch emergency" button. By pressing on the speech button the text inputted on the top of the screen is spoken with the selected pitch, rate, and language. By pressing on the add phrase button, the user is brought to a page where they can save and delete phrases in all supported languages to be spoken quickly (as long as your language setting is set to the corresponding language). There will be an instructional overlay upon the first time entering the saved phrases screen as well. Finally, the "one-touch" emergency button will alert emergency personnel for you with a single tap (currently only supported in the US).
+
+- Hit the settings button on the top left and the user is presented with the settings page. Here the user can input his information for quick access by emergency personnel such as full name, date of birth, and anything in the medical information field such as blood type, personal physician, etc. Speech settings can be adjusted here as well, changes are stored in persistant storage and will update on the main screen. An emergency contact can be specified and if the user does so, the "one-touch emergency button" will call that emergency contact instead of emergency personnel. At the bottom of the settings page is an abouts page that may or may not contain an easter egg. (Try tapping on the screen)
+
+- A summary of behind the scenes without reading the entire changelog: There are a total of 6 view controllers and 1 navigation controller, a scroll view that supports auto-layout, a little key-value coding, UI view animation, swipe and tap gesture recognizers, and the most difficult thing of all, saving the reading from persistant memory across views and reflecting those changes.
+

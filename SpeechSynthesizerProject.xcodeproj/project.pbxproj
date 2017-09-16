@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		400E70041C9FAE6000643A0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E70031C9FAE6000643A0F /* AppDelegate.m */; };
+		400E70071C9FAE6000643A0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E70061C9FAE6000643A0F /* ViewController.m */; };
+		400E700A1C9FAE6000643A0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400E70081C9FAE6000643A0F /* Main.storyboard */; };
+		400E700C1C9FAE6000643A0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400E700B1C9FAE6000643A0F /* Assets.xcassets */; };
+		400E700F1C9FAE6000643A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400E700D1C9FAE6000643A0F /* LaunchScreen.storyboard */; };
+		400E701A1C9FAE6000643A0F /* SpeechSynthesizerProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E70191C9FAE6000643A0F /* SpeechSynthesizerProjectTests.m */; };
+		400E70251C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 400E70241C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.m */; };
+		4027871C1CBEE22600802430 /* Instructional_Overlay_MainView.png in Resources */ = {isa = PBXBuildFile; fileRef = 4027871A1CBEE22600802430 /* Instructional_Overlay_MainView.png */; };
+		4027871D1CBEE22600802430 /* Instructional_Overlay_TableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 4027871B1CBEE22600802430 /* Instructional_Overlay_TableView.png */; };
+		402DE8901CA3E3B10004CFA1 /* emergency_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 402DE88F1CA3E3B10004CFA1 /* emergency_button.png */; };
+		4043CCB91CA764770010AEFF /* DoneButtonBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4043CCB81CA764770010AEFF /* DoneButtonBlue.png */; };
+		404A12E51CA3D37D005152E0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 404A12E41CA3D37D005152E0 /* button.png */; };
+		405001D11CA478C500D66208 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405001D01CA478C500D66208 /* ThirdViewController.m */; };
+		406413E81CAB9B7100B7DD86 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 406413E71CAB9B7100B7DD86 /* FifthViewController.m */; };
+		40AC1D341CD1F44C007E3616 /* Misty Forest Tree Line Android Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40AC1D331CD1F44C007E3616 /* Misty Forest Tree Line Android Wallpaper.jpg */; };
+		40AC1D381CD2AE86007E3616 /* WSU_Cougar_Roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AC1D371CD2AE86007E3616 /* WSU_Cougar_Roar.mp3 */; };
+		40AC1D3C1CD2B0C3007E3616 /* Cougar_Logo_White.png in Resources */ = {isa = PBXBuildFile; fileRef = 40AC1D3B1CD2B0C3007E3616 /* Cougar_Logo_White.png */; };
+		40AC1D3E1CD2B2F4007E3616 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AC1D3D1CD2B2F4007E3616 /* AVFoundation.framework */; };
+		40ED74081CD3E164003919D9 /* Proposal and How to Use in Resources */ = {isa = PBXBuildFile; fileRef = 40ED74071CD3E164003919D9 /* Proposal and How to Use */; };
+		40F467721CBDCA3E003DB160 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F467711CBDCA3E003DB160 /* FourthViewController.m */; };
+		40F4677F1CBDFA0E003DB160 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F4677E1CBDFA0E003DB160 /* SecondViewController.m */; };
+		40F467821CBE01E7003DB160 /* SixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F467811CBE01E7003DB160 /* SixthViewController.m */; };
+		40F467841CBE24B8003DB160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F467831CBE24B8003DB160 /* main.m */; };
+		40FAAC011CA475FF003B61A8 /* add_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FAAC001CA475FF003B61A8 /* add_button.png */; };
+		40FABF6C1C9FC1BB000C698E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FABF6B1C9FC1BB000C698E /* UIKit.framework */; };
+		40FABF6E1C9FC1C4000C698E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FABF6D1C9FC1C4000C698E /* Foundation.framework */; };
+		40FABF701C9FC1CA000C698E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FABF6F1C9FC1CA000C698E /* CoreGraphics.framework */; };
+		40FABF731C9FC321000C698E /* Full Changelog in Resources */ = {isa = PBXBuildFile; fileRef = 40FABF721C9FC321000C698E /* Full Changelog */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		400E70161C9FAE6000643A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400E6FF41C9FAE6000643A0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 400E6FFB1C9FAE6000643A0F;
+			remoteInfo = SpeechSynthesizerProject;
+		};
+		400E70211C9FAE6000643A0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 400E6FF41C9FAE6000643A0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 400E6FFB1C9FAE6000643A0F;
+			remoteInfo = SpeechSynthesizerProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		400E6FFC1C9FAE6000643A0F /* SpeechSynthesizerProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechSynthesizerProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E70021C9FAE6000643A0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		400E70031C9FAE6000643A0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		400E70051C9FAE6000643A0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		400E70061C9FAE6000643A0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		400E70091C9FAE6000643A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		400E700B1C9FAE6000643A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		400E700E1C9FAE6000643A0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		400E70101C9FAE6000643A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400E70151C9FAE6000643A0F /* SpeechSynthesizerProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechSynthesizerProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E70191C9FAE6000643A0F /* SpeechSynthesizerProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizerProjectTests.m; sourceTree = "<group>"; };
+		400E701B1C9FAE6000643A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400E70201C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeechSynthesizerProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		400E70241C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizerProjectUITests.m; sourceTree = "<group>"; };
+		400E70261C9FAE6000643A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4027871A1CBEE22600802430 /* Instructional_Overlay_MainView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Instructional_Overlay_MainView.png; path = ../Instructional_Overlay_MainView.png; sourceTree = "<group>"; };
+		4027871B1CBEE22600802430 /* Instructional_Overlay_TableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Instructional_Overlay_TableView.png; path = ../Instructional_Overlay_TableView.png; sourceTree = "<group>"; };
+		4027871E1CBEE58400802430 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		402DE88F1CA3E3B10004CFA1 /* emergency_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency_button.png; sourceTree = "<group>"; };
+		4043CCB81CA764770010AEFF /* DoneButtonBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneButtonBlue.png; sourceTree = "<group>"; };
+		404A12E41CA3D37D005152E0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		405001CF1CA478C500D66208 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		405001D01CA478C500D66208 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		406413E61CAB9B7100B7DD86 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
+		406413E71CAB9B7100B7DD86 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
+		40AC1D331CD1F44C007E3616 /* Misty Forest Tree Line Android Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Misty Forest Tree Line Android Wallpaper.jpg"; sourceTree = "<group>"; };
+		40AC1D371CD2AE86007E3616 /* WSU_Cougar_Roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WSU_Cougar_Roar.mp3; sourceTree = "<group>"; };
+		40AC1D3B1CD2B0C3007E3616 /* Cougar_Logo_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cougar_Logo_White.png; sourceTree = "<group>"; };
+		40AC1D3D1CD2B2F4007E3616 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		40ED74071CD3E164003919D9 /* Proposal and How to Use */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Proposal and How to Use"; sourceTree = "<group>"; };
+		40F467701CBDCA3E003DB160 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		40F467711CBDCA3E003DB160 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		40F4677D1CBDFA0E003DB160 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		40F4677E1CBDFA0E003DB160 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		40F467801CBE01E7003DB160 /* SixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthViewController.h; sourceTree = "<group>"; };
+		40F467811CBE01E7003DB160 /* SixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthViewController.m; sourceTree = "<group>"; };
+		40F467831CBE24B8003DB160 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40FAAC001CA475FF003B61A8 /* add_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_button.png; sourceTree = "<group>"; };
+		40FABF6B1C9FC1BB000C698E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40FABF6D1C9FC1C4000C698E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40FABF6F1C9FC1CA000C698E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40FABF721C9FC321000C698E /* Full Changelog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Full Changelog"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400E6FF91C9FAE6000643A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40AC1D3E1CD2B2F4007E3616 /* AVFoundation.framework in Frameworks */,
+				40FABF701C9FC1CA000C698E /* CoreGraphics.framework in Frameworks */,
+				40FABF6E1C9FC1C4000C698E /* Foundation.framework in Frameworks */,
+				40FABF6C1C9FC1BB000C698E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E70121C9FAE6000643A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E701D1C9FAE6000643A0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400E6FF31C9FAE6000643A0F = {
+			isa = PBXGroup;
+			children = (
+				40FABF721C9FC321000C698E /* Full Changelog */,
+				40ED74071CD3E164003919D9 /* Proposal and How to Use */,
+				400E6FFE1C9FAE6000643A0F /* SpeechSynthesizerProject */,
+				40FABF711C9FC1EB000C698E /* Frameworks */,
+				400E70181C9FAE6000643A0F /* SpeechSynthesizerProjectTests */,
+				400E70231C9FAE6000643A0F /* SpeechSynthesizerProjectUITests */,
+				400E6FFD1C9FAE6000643A0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		400E6FFD1C9FAE6000643A0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				400E6FFC1C9FAE6000643A0F /* SpeechSynthesizerProject.app */,
+				400E70151C9FAE6000643A0F /* SpeechSynthesizerProjectTests.xctest */,
+				400E70201C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400E6FFE1C9FAE6000643A0F /* SpeechSynthesizerProject */ = {
+			isa = PBXGroup;
+			children = (
+				400E70021C9FAE6000643A0F /* AppDelegate.h */,
+				400E70031C9FAE6000643A0F /* AppDelegate.m */,
+				400E70051C9FAE6000643A0F /* ViewController.h */,
+				400E70061C9FAE6000643A0F /* ViewController.m */,
+				400E70081C9FAE6000643A0F /* Main.storyboard */,
+				405001D31CA478DC00D66208 /* Settings View Controller */,
+				405001D21CA478D300D66208 /* Table View Controllers */,
+				406413E91CAB9B7800B7DD86 /* About View Controller */,
+				400E700B1C9FAE6000643A0F /* Assets.xcassets */,
+				400E700D1C9FAE6000643A0F /* LaunchScreen.storyboard */,
+				400E70101C9FAE6000643A0F /* Info.plist */,
+				400E6FFF1C9FAE6000643A0F /* Supporting Files */,
+			);
+			path = SpeechSynthesizerProject;
+			sourceTree = "<group>";
+		};
+		400E6FFF1C9FAE6000643A0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4027871A1CBEE22600802430 /* Instructional_Overlay_MainView.png */,
+				40AC1D3B1CD2B0C3007E3616 /* Cougar_Logo_White.png */,
+				4027871B1CBEE22600802430 /* Instructional_Overlay_TableView.png */,
+				40AC1D371CD2AE86007E3616 /* WSU_Cougar_Roar.mp3 */,
+				4043CCB81CA764770010AEFF /* DoneButtonBlue.png */,
+				402DE88F1CA3E3B10004CFA1 /* emergency_button.png */,
+				40AC1D331CD1F44C007E3616 /* Misty Forest Tree Line Android Wallpaper.jpg */,
+				40FAAC001CA475FF003B61A8 /* add_button.png */,
+				404A12E41CA3D37D005152E0 /* button.png */,
+				40F467831CBE24B8003DB160 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		400E70181C9FAE6000643A0F /* SpeechSynthesizerProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				400E70191C9FAE6000643A0F /* SpeechSynthesizerProjectTests.m */,
+				400E701B1C9FAE6000643A0F /* Info.plist */,
+			);
+			path = SpeechSynthesizerProjectTests;
+			sourceTree = "<group>";
+		};
+		400E70231C9FAE6000643A0F /* SpeechSynthesizerProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				400E70241C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.m */,
+				400E70261C9FAE6000643A0F /* Info.plist */,
+			);
+			path = SpeechSynthesizerProjectUITests;
+			sourceTree = "<group>";
+		};
+		405001D21CA478D300D66208 /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				405001CF1CA478C500D66208 /* ThirdViewController.h */,
+				405001D01CA478C500D66208 /* ThirdViewController.m */,
+				40F467701CBDCA3E003DB160 /* FourthViewController.h */,
+				40F467711CBDCA3E003DB160 /* FourthViewController.m */,
+			);
+			name = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		405001D31CA478DC00D66208 /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40F4677D1CBDFA0E003DB160 /* SecondViewController.h */,
+				40F4677E1CBDFA0E003DB160 /* SecondViewController.m */,
+				40F467801CBE01E7003DB160 /* SixthViewController.h */,
+				40F467811CBE01E7003DB160 /* SixthViewController.m */,
+			);
+			name = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		406413E91CAB9B7800B7DD86 /* About View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				406413E61CAB9B7100B7DD86 /* FifthViewController.h */,
+				406413E71CAB9B7100B7DD86 /* FifthViewController.m */,
+			);
+			name = "About View Controller";
+			sourceTree = "<group>";
+		};
+		40FABF711C9FC1EB000C698E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40AC1D3D1CD2B2F4007E3616 /* AVFoundation.framework */,
+				4027871E1CBEE58400802430 /* SpriteKit.framework */,
+				40FABF6F1C9FC1CA000C698E /* CoreGraphics.framework */,
+				40FABF6D1C9FC1C4000C698E /* Foundation.framework */,
+				40FABF6B1C9FC1BB000C698E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		400E6FFB1C9FAE6000643A0F /* SpeechSynthesizerProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E70291C9FAE6000643A0F /* Build configuration list for PBXNativeTarget "SpeechSynthesizerProject" */;
+			buildPhases = (
+				400E6FF81C9FAE6000643A0F /* Sources */,
+				400E6FF91C9FAE6000643A0F /* Frameworks */,
+				400E6FFA1C9FAE6000643A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechSynthesizerProject;
+			productName = SpeechSynthesizerProject;
+			productReference = 400E6FFC1C9FAE6000643A0F /* SpeechSynthesizerProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		400E70141C9FAE6000643A0F /* SpeechSynthesizerProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E702C1C9FAE6000643A0F /* Build configuration list for PBXNativeTarget "SpeechSynthesizerProjectTests" */;
+			buildPhases = (
+				400E70111C9FAE6000643A0F /* Sources */,
+				400E70121C9FAE6000643A0F /* Frameworks */,
+				400E70131C9FAE6000643A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				400E70171C9FAE6000643A0F /* PBXTargetDependency */,
+			);
+			name = SpeechSynthesizerProjectTests;
+			productName = SpeechSynthesizerProjectTests;
+			productReference = 400E70151C9FAE6000643A0F /* SpeechSynthesizerProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		400E701F1C9FAE6000643A0F /* SpeechSynthesizerProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400E702F1C9FAE6000643A0F /* Build configuration list for PBXNativeTarget "SpeechSynthesizerProjectUITests" */;
+			buildPhases = (
+				400E701C1C9FAE6000643A0F /* Sources */,
+				400E701D1C9FAE6000643A0F /* Frameworks */,
+				400E701E1C9FAE6000643A0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				400E70221C9FAE6000643A0F /* PBXTargetDependency */,
+			);
+			name = SpeechSynthesizerProjectUITests;
+			productName = SpeechSynthesizerProjectUITests;
+			productReference = 400E70201C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		400E6FF41C9FAE6000643A0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = WSU;
+				TargetAttributes = {
+					400E6FFB1C9FAE6000643A0F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q8PY67RKEP;
+					};
+					400E70141C9FAE6000643A0F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 400E6FFB1C9FAE6000643A0F;
+					};
+					400E701F1C9FAE6000643A0F = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 400E6FFB1C9FAE6000643A0F;
+					};
+				};
+			};
+			buildConfigurationList = 400E6FF71C9FAE6000643A0F /* Build configuration list for PBXProject "SpeechSynthesizerProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 400E6FF31C9FAE6000643A0F;
+			productRefGroup = 400E6FFD1C9FAE6000643A0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				400E6FFB1C9FAE6000643A0F /* SpeechSynthesizerProject */,
+				400E70141C9FAE6000643A0F /* SpeechSynthesizerProjectTests */,
+				400E701F1C9FAE6000643A0F /* SpeechSynthesizerProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		400E6FFA1C9FAE6000643A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4027871D1CBEE22600802430 /* Instructional_Overlay_TableView.png in Resources */,
+				400E700F1C9FAE6000643A0F /* LaunchScreen.storyboard in Resources */,
+				40ED74081CD3E164003919D9 /* Proposal and How to Use in Resources */,
+				402DE8901CA3E3B10004CFA1 /* emergency_button.png in Resources */,
+				40AC1D341CD1F44C007E3616 /* Misty Forest Tree Line Android Wallpaper.jpg in Resources */,
+				40FAAC011CA475FF003B61A8 /* add_button.png in Resources */,
+				404A12E51CA3D37D005152E0 /* button.png in Resources */,
+				40AC1D3C1CD2B0C3007E3616 /* Cougar_Logo_White.png in Resources */,
+				400E700C1C9FAE6000643A0F /* Assets.xcassets in Resources */,
+				40FABF731C9FC321000C698E /* Full Changelog in Resources */,
+				400E700A1C9FAE6000643A0F /* Main.storyboard in Resources */,
+				40AC1D381CD2AE86007E3616 /* WSU_Cougar_Roar.mp3 in Resources */,
+				4043CCB91CA764770010AEFF /* DoneButtonBlue.png in Resources */,
+				4027871C1CBEE22600802430 /* Instructional_Overlay_MainView.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E70131C9FAE6000643A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E701E1C9FAE6000643A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		400E6FF81C9FAE6000643A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F467721CBDCA3E003DB160 /* FourthViewController.m in Sources */,
+				405001D11CA478C500D66208 /* ThirdViewController.m in Sources */,
+				400E70071C9FAE6000643A0F /* ViewController.m in Sources */,
+				40F4677F1CBDFA0E003DB160 /* SecondViewController.m in Sources */,
+				400E70041C9FAE6000643A0F /* AppDelegate.m in Sources */,
+				406413E81CAB9B7100B7DD86 /* FifthViewController.m in Sources */,
+				40F467841CBE24B8003DB160 /* main.m in Sources */,
+				40F467821CBE01E7003DB160 /* SixthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E70111C9FAE6000643A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E701A1C9FAE6000643A0F /* SpeechSynthesizerProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		400E701C1C9FAE6000643A0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				400E70251C9FAE6000643A0F /* SpeechSynthesizerProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		400E70171C9FAE6000643A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 400E6FFB1C9FAE6000643A0F /* SpeechSynthesizerProject */;
+			targetProxy = 400E70161C9FAE6000643A0F /* PBXContainerItemProxy */;
+		};
+		400E70221C9FAE6000643A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 400E6FFB1C9FAE6000643A0F /* SpeechSynthesizerProject */;
+			targetProxy = 400E70211C9FAE6000643A0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		400E70081C9FAE6000643A0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				400E70091C9FAE6000643A0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		400E700D1C9FAE6000643A0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				400E700E1C9FAE6000643A0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		400E70271C9FAE6000643A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		400E70281C9FAE6000643A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		400E702A1C9FAE6000643A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q8PY67RKEP;
+				INFOPLIST_FILE = SpeechSynthesizerProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WSU-CptS483.SpeechSynthesizerProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		400E702B1C9FAE6000643A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q8PY67RKEP;
+				INFOPLIST_FILE = SpeechSynthesizerProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WSU-CptS483.SpeechSynthesizerProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		400E702D1C9FAE6000643A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeechSynthesizerProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WSU-CptS483.SpeechSynthesizerProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechSynthesizerProject.app/SpeechSynthesizerProject";
+			};
+			name = Debug;
+		};
+		400E702E1C9FAE6000643A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpeechSynthesizerProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WSU-CptS483.SpeechSynthesizerProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpeechSynthesizerProject.app/SpeechSynthesizerProject";
+			};
+			name = Release;
+		};
+		400E70301C9FAE6000643A0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpeechSynthesizerProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WSU-CptS483.SpeechSynthesizerProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpeechSynthesizerProject;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		400E70311C9FAE6000643A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpeechSynthesizerProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WSU-CptS483.SpeechSynthesizerProjectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpeechSynthesizerProject;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		400E6FF71C9FAE6000643A0F /* Build configuration list for PBXProject "SpeechSynthesizerProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E70271C9FAE6000643A0F /* Debug */,
+				400E70281C9FAE6000643A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400E70291C9FAE6000643A0F /* Build configuration list for PBXNativeTarget "SpeechSynthesizerProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E702A1C9FAE6000643A0F /* Debug */,
+				400E702B1C9FAE6000643A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400E702C1C9FAE6000643A0F /* Build configuration list for PBXNativeTarget "SpeechSynthesizerProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E702D1C9FAE6000643A0F /* Debug */,
+				400E702E1C9FAE6000643A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		400E702F1C9FAE6000643A0F /* Build configuration list for PBXNativeTarget "SpeechSynthesizerProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				400E70301C9FAE6000643A0F /* Debug */,
+				400E70311C9FAE6000643A0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 400E6FF41C9FAE6000643A0F /* Project object */;
+}

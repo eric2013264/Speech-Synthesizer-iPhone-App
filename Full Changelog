@@ -1,0 +1,79 @@
+
+FULL CHANGELOG
+
+FILES/CONTENT
+
+FirstViewController: The main page. all of this information is saved. The settings are saved beyond quitting the app and communicated to the third view controller, as user settings should be app-wide.
+SecondViewController: The settings/information page. All of this information is saved beyond quitting the app and communicated to the first view controller (emergency contact info for the emergency button). Page that holds the most potential for more stuff to be done.
+ThirdViewController: Table view page that contains cells, talks to first and fourth VCs
+FourthViewController: Text input view for the table's cells
+FifthViewController: About page. Simple segue back.
+SixthViewController: Handles both the date picker and the language picker
+
+-------------------------------------------------- Version 0.0 --------------------------------------------------
+
+March 20 - Began work on app
+March 24 - Designed the logo, used a soundwave png from stackoverflow's logo requests. Starting working on the SETTINGS page. Added emergency contacts fields as well as MEDICAL/HEALTH
+           INFO.
+March 26 - Can't figure out why the Name and Number fields won't stay there after transitioning between views. GRR. Scratch that, few hours later, I got it to work. Now the emergency
+           contact part is done. Starting work on the Commonly used phrases page. Urgh list views. Wonder if I can throw a nav controller in front of it and have the segues work.
+           Edit: nope. an extra nav controller made it extremely confusing so I ditched it
+March 27 - FEATURES I NEED TO IMPLEMENT: SAVE HEALTH INFO TEXTFIELD TEXT. CHECK
+         - IMPLEMENT SAVING USER SETTINGS PAST QUIT. NOT CHECK
+
+-------------------------------------------------- Version 0.1 -------------------------------------------------- YAY first "stable" build
+
+March 28 - Removed switch for now since I couldn't come up with a use for it. It was also causing problems with the segue. Got the emergency call feature to handle if the emergency phone
+           number is entered or not. Had to catch both number.text isEqualTo: @"" AND number.text == nil cases. That was confusing, but I see now it was for uninitialized and initialized
+           states.
+         - IMPLEMENT SAVING USER SETTINGS PAST QUIT. CHECK
+         - When transitioning from the app to the in-call screen from the emergency call button, we get this error about conflicting constraits. I've followed the advice given by the
+           NSLog output and traced the symbolic breakpoint for "UIViewAlertForUnsatisfiableConstraints". No idea what it means. The following stackoverflow question details a similar
+           situation: https://stackoverflow.com/questions/33112762/in-call-status-bar-unable-to-satisfy-constraints
+           Some say it's a compiler error and I kind of agree. Supressed it with function (void)application:(UIApplication *)application willChangeStatusBarFrame:(CGRect)newStatusBarFrame
+           found at that link.
+         - Found and fixed a bug when you start up the app after quitting and it doesn't read info in the second view controller.
+         - Starting work connecting the commonly used phrases controllers to the main app. Steady...steady...
+         - Entire day of working on this but I implemented a name field and then the table view is now mutable from both views (first and third) and can has all the table features (deleting, adding, recognizing when
+           a cell has been selected...). Only need to implement speech when selecting a cell.
+         - Implmented speech when selecting a cell.
+         - First stable build with all the features working. Put in a lot of hours early, just excited to get a build with all the functionality working semi-well. I've done comprehensive, rudimentary error testing
+           and every feature works under normal usage conditions. Proud to call this version 0.1.
+
+-------------------------------------------------- Version 0.2 -------------------------------------------------- BUG FIXES + Minor features FOR DAYS
+
+March 28 - Need to implement syncing speech settings between first and third view controllers
+         - ^ DONE and done. Now the user's speech settings (rate and pitch)in the first view controller are saved and applied in the table view controller (third view controller)
+         - Successfully added an about page and squashed a rate/pitch bug.
+         - Fixed the bug where after you quit the app and then launch it again. Attempting to delete a cell/list item with crash the app. Not sure how I missed that.
+April 4  - Fixed medical field textview saving issue. TextViews call their didEndEditing function when the  first responder resigns, aka the keyboard goes
+           away. The user, at the point where he or she just finished inputting text, only has access to the back button and other fields: no hide
+           keyboard button or done button. So the intuitive thing to do is to hit the back button. Which now manually calls didEndEditing at the right
+           time. Hitting the other fields after editing will also call didEndEditing.
+         - Implemented save phrases in all supported languages! Now all users have to do is keep the pickerview on the language they want and saved phrases will be spoken that language.
+         - Implemented persistant storage for user's language preference. So now it's basically good to go for users of all (supported) language needs.
+
+
+-------------------------------------------------- Version 0.3 -------------------------------------------------- UI and settings page overhaul
+
+April 12 - Working on new settings page based on a table design but since static table views were giving me trouble, it's a scroll view. Adding date of birth, the ability for the speech rate and pitch to be synced
+           across pages (consider redesigning main page since why have 2 pages of settings back to back). Also gender preference. Also changed overall app font and color scheme.
+April 13 - Got everything except for the gender settings implemented. Took more time than I'd like to admit
+           Added swipe left gesture to go back a page
+         - Whoops broke my speech rate for some reason. Uhhh turns out 2x was just way too fast. redid the rate scale.
+           Turns out you can't access the gender settings. Oh well.
+
+April 21 - Features that aren't immediately obvious (idk what do apps do? wait until the user finds out or tell them?):
+            1. Swipe left to go back a page
+            2. Order of saved phrases can be changed by long pressing on the cells
+April 27 - Added support for iPhone 6S: made sure app-wide the elements would scale correctly.
+April 28 - Added wallpaper and changed pickedview color programatically. New bold font for better readability
+         - Now the textview field shoots right up to where the user can see it when it's tapped on and then right back down when the user is done editting. This took a while.
+         - NEED TO MAKE DATE PICKER IN 6th VC WHITE TEXT. Done!
+         - Updated icon!
+         - Added AVFoundation for sound clips
+
+-------------------------------------------------- Version 0.4 -------------------------------------------------- Finishing touches before submission
+April 29 - Idea for future feature: support emergency personnel calling. Need to automatically check for location and then fetch matching local emergency hotlines.
+
+May 3 - Project Due!
